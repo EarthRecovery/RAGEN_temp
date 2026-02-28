@@ -18,7 +18,8 @@ from .game_2048.config import Game2048EnvConfig
 from .game_2048.env import Game2048Env
 from .rubikscube.config import RubiksCube2x2Config
 from .rubikscube.env import RubiksCube2x2Env
-
+from .deepcoder.config import DeepCoderEnvConfig
+from .deepcoder.env import DeepCoderEnv
 
 REGISTERED_ENVS = {
     'bandit': BanditEnv,
@@ -31,6 +32,7 @@ REGISTERED_ENVS = {
     'sudoku': SudokuEnv,
     'game_2048': Game2048Env,
     'rubikscube': RubiksCube2x2Env,
+    'deepcoder': DeepCoderEnv,
 }
 
 REGISTERED_ENV_CONFIGS = {
@@ -42,6 +44,7 @@ REGISTERED_ENV_CONFIGS = {
     'metamathqa': MetaMathQAEnvConfig,
     'lean': LeanEnvConfig,
     'sudoku': SudokuEnvConfig,
+    'deepcoder': DeepCoderEnvConfig,
     'game_2048': Game2048EnvConfig,   
     'rubikscube': RubiksCube2x2Config,
 }
